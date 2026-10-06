@@ -1,0 +1,6 @@
+{
+  "name": "Dover FuelIQ - Enterprise Fuel Station Telemetry Dashboard",
+  "description": "Real-time fuel station automation and IoT telemetry dashboard by Dover Fueling Solutions, featuring tank level monitoring, dispenser and nozzle metrics (PNDF), interactive station topology architecture, live analytics, and transaction logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
