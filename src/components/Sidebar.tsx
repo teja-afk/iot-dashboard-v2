@@ -14,7 +14,8 @@ import {
   PanelLeftOpen,
   ShieldCheck,
   Zap,
-  Activity
+  Activity,
+  Database
 } from 'lucide-react';
 import { NavTabId } from './Navigation';
 import { StationData } from '../types/fuel-station';
@@ -88,6 +89,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
       id: 'reports' as NavTabId,
       label: 'Reports & Analytics',
       icon: FileText,
+    },
+    {
+      id: 'mongo' as NavTabId,
+      label: 'MongoDB Schemas',
+      icon: Database,
     },
     {
       id: 'wireframes' as NavTabId,

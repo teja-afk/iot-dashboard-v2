@@ -36,13 +36,14 @@ export const TopBar: React.FC<TopBarProps> = ({
       case 'architecture': return 'Station Architecture';
       case 'onboard': return 'Onboard Dispenser';
       case 'reports': return 'Reports & Analytics';
+      case 'mongo': return 'MongoDB Schemas & Collections';
       case 'wireframes': return 'Wireframes & Blueprint';
       default: return 'Overview';
     }
   };
 
   return (
-    <header className="bg-white border-b border-gray-200/90 sticky top-0 z-40 px-6 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 shadow-2xs">
+    <header className="bg-white border-b border-gray-200/90 sticky top-0 z-50 px-6 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 shadow-2xs">
       {/* Left Breadcrumb */}
       <div className="flex items-center gap-2 text-xs">
         <span className="text-gray-400 font-medium">Dashboard</span>

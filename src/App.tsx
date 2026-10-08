@@ -14,6 +14,7 @@ import { StationArchitectureView } from './components/StationArchitectureView';
 import { ReportsView } from './components/ReportsView';
 import { WireframeAssetViewer } from './components/WireframeAssetViewer';
 import { OnboardingView } from './components/OnboardingView';
+import { MongoIntegrationHub } from './components/MongoIntegrationHub';
 import { LoginModal } from './components/LoginModal';
 import { INITIAL_STATION_DATA, ALTERNATIVE_STATIONS } from './data/mock-station-data';
 import { DispenserData, StationData } from './types/fuel-station';
@@ -212,6 +213,10 @@ export default function App() {
 
           {activeTab === 'reports' && (
             <ReportsView stationData={stationData} />
+          )}
+
+          {activeTab === 'mongo' && (
+            <MongoIntegrationHub />
           )}
 
           {activeTab === 'wireframes' && (

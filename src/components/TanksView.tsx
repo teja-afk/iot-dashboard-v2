@@ -164,10 +164,10 @@ export const TanksView: React.FC<TanksViewProps> = ({ tanks, onSelectDispenser }
 
             {/* Horizontal Cylindrical Tank Graphic */}
             <div className="relative w-full max-w-sm h-56 my-2 flex items-center justify-center">
-              <div className="relative w-full h-44 rounded-[36px] border-3 border-gray-300 bg-white shadow-inner overflow-hidden flex flex-col justify-end">
+              <div className="relative w-full h-44 rounded-[36px] border-3 border-gray-300 bg-white shadow-inner overflow-hidden flex flex-col justify-end isolate">
                 
                 {/* Horizontal Level Guides */}
-                <div className="absolute inset-0 flex flex-col justify-between p-3.5 pointer-events-none z-1 text-[9px] font-mono text-gray-400 opacity-60">
+                <div className="absolute inset-0 flex flex-col justify-between p-3.5 pointer-events-none z-[1] text-[9px] font-mono text-gray-400 opacity-60">
                   <div className="border-b border-dashed border-gray-200 flex justify-between">
                     <span>100% OVERFILL ALARM</span>
                     <span>2850 mm</span>
@@ -187,7 +187,7 @@ export const TanksView: React.FC<TanksViewProps> = ({ tanks, onSelectDispenser }
                 </div>
 
                 {/* Vertical Probe Stem */}
-                <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-gray-300 z-2">
+                <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-gray-300 z-[2]">
                   {/* Water float */}
                   <div 
                     className="absolute w-3.5 h-3.5 rounded-full bg-cyan-500 border border-white -translate-x-1/2 left-1/2 shadow-xs"

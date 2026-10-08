@@ -9,7 +9,7 @@ import {
   Layers
 } from 'lucide-react';
 
-export type NavTabId = 'overview' | 'tanks' | 'dispensers' | 'nozzles' | 'architecture' | 'reports' | 'wireframes' | 'onboard';
+export type NavTabId = 'overview' | 'tanks' | 'dispensers' | 'nozzles' | 'architecture' | 'reports' | 'wireframes' | 'onboard' | 'mongo';
 
 interface NavigationProps {
   activeTab: NavTabId;
